@@ -1,5 +1,5 @@
 {{ config(
-  enabled=false
+  enabled=true
 ) }}
 
 {% set payment_methods = ['credit_card', 'coupon', 'bank_transfer', 'gift_card'] %}
