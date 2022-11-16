@@ -36,6 +36,7 @@ order_payments as (
 final as (
 
     select
+        {{ dbt_utils.surrogate_key(['orders.order_id']) }} as primary_key,
         orders.order_id,
         orders.customer_id,
         orders.order_date,
